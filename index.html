@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>vim</title>
+</head>
+
+<body>
+    <header>
+
+        <h1>Les commandes de Vim</h1>
+
+       </header>
+
+        <nav>
+            <a href="index.html">index</a> |
+            <a href="contact.html">contact</a> |
+           </nav>
+
+                <section>
+                    </articles>
+
+
+                  <h3>Les commandes de vim</h3>
+
+
+<table>
+  <tr>
+
+      <th> commande </th>
+      <th> action </th>      
+  </tr
+  >
+  <tr>
+      <td><code>k</code></td>
+              <td>Se déplacer vers le haut</td>
+  </tr>
+
+  <tr>
+      <td><code>j</code></td>
+      <td>Se déplacer vers le bas</td>
+  </tr>
+
+  <tr>
+      <td><code>h</code></td>
+      <td>Se déplacer vers la gauche </td>
+  </tr>
+
+  <tr>
+      <td><code>l</code></td>
+      <td>Se déplacer vers la droite</td>
+  </tr>
+
+  </table>
+
+  <h3>Les sélections</h3>
+
+<table>
+<tr
+    >
+<th> commande </th>
+<th> action </th>
+</tr>
+
+    <td><code>aw</code></td>
+    <td>Un mot</td>
+            </tr>
+            <tr>
+
+    <td><code>as</code></td>
+    <td>Une phrase (sentence)</td>
+            </tr>
+            <tr>
+
+     <td><code>ap</code></td>
+     <td>Un paragraphe</td>
+            </tr>
+            <tr>
+
+     <td><code>a(, a[, a,</code></td>
+     <td>Un bloc délimité</td>
+            </tr>
+            <tr>
+
+      <tr><code>a", a', a</code></td>
+      <td>Un bloc encadré de guillemets</td>
+            </tr>
+            <tr>
+
+       <td><code>at</td></code>
+       <td>Une balise (tag) à la XML</td>
+            </tr>
+
+</table>
+
+<h3>Les mouvements</h3>
+
+<table>
+    <tr>
+<th> commande </th>
+<th> action </th>
+    </tr>
+    <tr>
+
+<td><code>$</code></td>
+<td>Aller en fin de ligne</td> 
+            </tr>
+            <tr> 
+
+<td><code>0</code></td>
+<td> Aller en début de ligne</td>
+            </tr>
+            <tr>
+
+<td><code>^</code></td>
+<td> Aller au première caractère qui n'est pas un espace ou une tab de la ligne</td>
+            </tr>
+            <tr>
+
+<td><code>gg</code></td>
+<td>Aller en début de document</td>
+            </tr>
+            <tr>
+
+ <td><code>G</code></td>
+ <td>Aller en fin de document</td>
+            </tr>
+            <tr>
+
+ <td><code>:<n></code></td>
+ <td>Aller à la ligne (où est un nombre entier)</td>
+            </tr>
+            <tr>
+
+ <td><code>f<s></code></td>
+ <td>Jusqu'au caractère "s" en allant vers l'avant</td>
+            </tr>
+            <tr>
+                
+ <td><code>F<s></code> 
+ <td>Jusqu'au caractère "s" en allant vers l'arrière</td>
+            </tr>
+            <tr>
+
+ <td><code>t<s></code> 
+ <td>Jusqu'au caractère "s" en allant vers l'avant et en s'arrêtant juste avant</td>
+            </tr>
+            <tr>
+
+ <td><code>T<s></code>
+ <td>Jusqu'au caractère "s" en allant vers l'arrière et en s'arrêtant juste avant</td>
+            </tr>
+</table>
+
+
+<h3>Les intervalles</h3>
+
+<table>
+    <tr>
+        <th> commande </th>
+        <th> action </th>
+    </tr>
+
+    <tr>
+    <td><code><n></code></td>
+    <td>La ligne n</td>
+    </tr>
+
+    <tr>
+        <td><code>.</code></td> 
+        <td>La ligne courante</td>
+    </tr>
+
+    <tr>
+        <td><code>%</code> 
+        <td>Toutes les lignes du fichier</td>
+    </tr>
+
+    <tr>
+        <td><code/><motif>/</code></td> 
+        <td>La prochaine ligne vérifiant le motif</td>
+    </tr>
+
+    <tr>
+        <td><code>$</code></td>
+        <td>Dernière ligne</td>
+    </tr>
+
+    <tr>
+        <td><code><spec1>,<spec2></code></td> 
+        <td>De la spécification de ligne 1 à la spécification de ligne 2</td>
+    </tr>
+    </table>  
+
+
+        <h3>Les modes</h3>
+
+        <table>
+            <tr>
+                <th> commande </th>
+                <th> action </th>
+
+            </tr>
+            
+            <tr>
+                <td><code>i</td></code>
+                <td>Entre en mode insertion au niveau du curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>a li</code></td>
+                <td> Entre en mode insertion après le curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>A $a</code></td>
+                <td>Entre en mode insertion sur le dernier caractère</td>
+            </tr>
+            <tr>
+
+                <td><code>o A<Entrée></code></td>
+                <td>Insère une ligne vide sous le curseur, place le curseur sur cette ligne, et entre en mode édition</td>
+            </tr>
+           
+            <tr>
+                <td><code>O</code></td>
+                <td>Idem mais une ligne au dessus du curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>v</code></td>
+                <td>Entre en mode visuel</td>
+            </tr>
+
+             <tr>
+                 <td><code>V</code></td>
+                <td>Entre en mode visuel par ligne</td>
+             </tr>
+               
+             <tr>
+                <td><code>C-v</code></td>
+                <td>Entre en mode visuel par bloc</td>
+             </tr>
+             <tr>
+
+                <td><code>R</code></td>                           
+                <td>Entre en mode remplacement</td>
+             </tr>
+
+             <tr>
+                <td><code>Echap<C-c></code></td>
+                <td>Entre en mode normal</td>
+             </tr>
+
+              <tr>
+                <td><code>:</code</td>
+                <td>Entre en mode commande (vous devez être en mode normal)</td>
+              </tr>
+
+              <tr>
+                <td><code><C-o></code></td> 
+                <td>En mode insertion, retourne en mode normal pour une seule commande, puis retourne en mode insertion juste après</td>
+               </tr>
+
+        </table>
+
+        <h3>Suppréssion</h3>
+
+        <table>
+
+            <tr>
+<th> commande </th> 
+<th> action </th>
+            </tr>
+
+            <tr>
+                <td><code>x</code></td>
+                <td>Le caractère sous le curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>s</code></td>
+                <td>Comme x mais entre en mode insertion après</td>
+            </tr>
+
+            <tr>
+                <td><code>dd</code></td>
+                <td>La ligne sous le curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>dw</code></td>
+                <td>Le mot sous le curseur</td>
+            </tr>
+
+            <tr>
+                <td><code>d$ D</code></td>
+                <td>Supprime jusqu'à la fin de la ligne</td>
+            </tr>
+
+            <tr>
+                <td><code>d<mouvement></code></td>
+                <td>Du curseur à la cible du déplacement</td>
+            </tr>
+
+            <tr>
+                <td><code>d<sélection></code></td> 
+                <td>La sélection précisée<td>
+            </tr>
+
+            <tr>
+                <td><code>c</code></td>
+                <td>Se comporte comme d mais entre en mode insertion après la suppression</td>
+            </tr>
+
+            <tr>
+                <td><code>u</code></td>
+                <td>Annulation de la dernière action</td>
+            </tr>
+
+            <tr>
+                <td><code>CTRL+R</code></td>
+                <td>Remettre (annuler l'annulation)</td>
+            </tr>
+        
+            </table>
+       
+       <h3>Copier</h3>                                                                  
+
+        <table>
+
+            <tr>
+                <th> commande </th>
+                <th> action </th>
+            </tr>
+
+            <tr>
+                <td><code>yy Y</code></td>
+                <td>Copie une ligne</td>
+            </tr>
+
+            <tr>
+                <td><code>yw</code></td>
+                <td>Copie un mot</td>
+            </tr>
+
+            <tr>
+                <td><code>y$</code></td>
+                <td>Copie du curseur à la fin de la ligne</td>
+            </tr>
+
+            <tr>
+                <td><code>ygg</code></td>
+                <td>Copie du curseur au début du document</td>
+            </tr>
+
+            <tr>
+                <td><code>y<mouvement></code></td>
+                <td>Copier jusqu'à la cible du mouvement</td>
+            </tr>
+
+            <tr>
+                <td><code>y<sélection></code></td>
+                <td> Copier la sélection précisée</td>
+            </tr>
+
+            <tr>
+                <td<code>p</td></code>
+                <td>Coller</td>
+             </tr>
+
+        </table>
+
+        <h3>Sauvegarde</h3>
+
+        <table>
+
+                <tr>
+                <th> commande </th>
+                <th> action </th>
+                </tr>
+
+                <tr>
+                <td><code>:w</code></td> 
+                <td>Sauvegarder</td>
+                </tr>
+
+                <tr>
+                <td><code>:q</code></td>
+                <td>Quitter</td>
+                </tr>
+
+                <tr>
+                <td><code>:q!</code></td>
+                <td>Quitter sans enregistrer</td>
+                </tr>
+
+                <tr>
+                <td><code>:wq :x</code></td> 
+                <td>Quitter et enregistrer</td>
+                </tr>
+
+                <tr>       
+                <td><code>:saveas</code></td>
+                <td>Enregistre désormais le fichier sous ce nom</td>
+                </tr>
+
+                <tr>
+                <td><code>:up :update</code></td> 
+                <td>Enregistre le buffer courant si il a été modifié</td>
+                </tr>
+
+        </table>
+
+        <h3>Pour les codeurs</h3>
+
+        <table>
+
+                <tr>
+                <th> commande </th>
+                <th> action </th>
+                </tr>
+
+                <tr>
+                <td><code>==</code></td>
+                <td>Réindente la ligne sous le curseur</td>
+                </tr>
+
+                <tr>
+                <td><code>gg=G</code></td>
+                <td>Réindente tout le document</td>
+                </tr>
+
+                <tr>
+                <td><code>=i{ =a{</code></td>
+                <td>Réindente tout le bloc courant, accolades exclues (inner-bloc) ou inclues (a)</td>
+                </tr>
+
+                <tr>
+                <td><code>K</code></td>
+                <td>Va essayer de trouver la documentation correspondant au mot sous le curseur</td>
+                </tr>
+        </table>
+
+<section/>
+
+    <footer>
+        <p>Poster par : Vermeire Marie-France</p>
+  <p>Contact: <a href="mailto:vermeiremf@hotmail.com">
+  vermeiremf@hotmail.com</a>.</p>
+    <footer/>
+</body>
+</html>
